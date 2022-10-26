@@ -1,5 +1,7 @@
 # Lighthouse Benchmarks Example for WordPress Site
 
+[![Build Status](https://semaphore-demos.semaphoreci.com/badges/lighthouse-wordpress/branches/master.svg?key=ccaa486f-dfa8-460e-b440-3a2f23f2b5de)](https://semaphore-demos.semaphoreci.com/projects/lighthouse-wordpress)
+
 This demo runs Google's [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) to benchmark a WordPress site.
 
 ## Requirements
