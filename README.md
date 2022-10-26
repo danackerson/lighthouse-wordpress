@@ -1,10 +1,13 @@
 # Lighthouse Benchmarks Example for WordPress Site
 
-This demo runs Lighthouse CI on https://semaphoreci.com
+This demo runs Google's [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) to benchmark a WordPress site.
 
 ## Requirements
 
-Node v12 or v14
+- Node v12 or better
+- Chrome
+- Semaphore CI/CD
+- GitHub or Bitbucket account
 
 Install dependencies:
 
@@ -20,26 +23,35 @@ Alternatively, instead of setting thresholds on `lighthouserc.js`, you can run/t
 
 ## Run locally
 
+Scan site:
+
 ```bash
-npm start
-npm run audit
+$ npm start
+```
+
+Analyze report files and export JUnit manifest.
+
+```bash
+$ npm run audit
 ```
 
 ## Continuous Integration
 
 The demo includes a Semaphore CI/CD pipeline.
 
-SCREENSHOT
+![CI/CD pipeline with scan and audit job](./screenshots/report-blog.jpg)
 
 You can view the Lightout HTML reports in the Artifacts tab:
 
-SCREENSHOT
+![Artifact tabs in Semaphore](./screenshots/project-artifacts.jpg)
 
-SCREENSHOT
+All the past reports can be reviewed directly from the artifacts:
+
+![Blog Lighthouse report](./screenshots/report-blog.jpg)
 
 The pipeline uses test reports integration to generate a more user friendly experience.
 
-SCREENSHOT
+![Test summary showing all tests results in one dashboard](./screenshots/test-summary.jpg)
 
 ## Licence
 
