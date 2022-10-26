@@ -1,8 +1,8 @@
 module.exports = {
   ci: {
     collect: {
-        url: ['https://semaphoreci.com'],
-        numberOfRuns: 1
+        url: ['https://semaphoreci.com', 'https://semaphoreci.com/blog'],
+        numberOfRuns: 5
     },
     assert: {
       assertions: {

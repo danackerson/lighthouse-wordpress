@@ -29,6 +29,7 @@ blocks:
         - name: Audit results
           commands:
             - checkout
+            - sem-version node 14
             - artifact pull workflow reports
             - cache restore
             - npm run audit
