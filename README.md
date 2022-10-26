@@ -6,10 +6,10 @@ This demo runs Google's [Lighthouse CI](https://github.com/GoogleChrome/lighthou
 
 ## Requirements
 
-- Node v12 or better
-- Chrome
-- Semaphore CI/CD
-- GitHub or Bitbucket account
+- Node v12 or better.
+- Google Chrome.
+- [Semaphore CI/CD](https://semaphoreci.com/).
+- A GitHub or Bitbucket account.
 
 Install dependencies:
 
@@ -39,11 +39,11 @@ $ npm run audit
 
 ## Continuous Integration
 
-The demo includes a Semaphore CI/CD pipeline.
+The demo includes a [Semaphore CI/CD](https://semaphoreci.com/) pipeline.
 
 ![CI/CD pipeline with scan and audit job](./screenshots/report-blog.jpg)
 
-You can view the Lightout HTML reports in the Artifacts tab:
+You can view the Lighthouse HTML reports in the Artifacts tab:
 
 ![Artifact tabs in Semaphore](./screenshots/project-artifacts.jpg)
 
@@ -51,7 +51,7 @@ All the past reports can be reviewed directly from the artifacts:
 
 ![Blog Lighthouse report](./screenshots/report-blog.jpg)
 
-The pipeline uses test reports integration to generate a more user friendly experience.
+The pipeline uses [test reports](https://docs.semaphoreci.com/essentials/test-summary/) integration to generate a more user friendly experience.
 
 ![Test summary showing all tests results in one dashboard](./screenshots/test-summary.jpg)
 
