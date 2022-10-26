@@ -22,6 +22,7 @@ blocks:
             - cache store
             - npm start
             - artifact push workflow reports
+            - artifact push project reports/*.html
   - name: Audit
     task:
       jobs:
