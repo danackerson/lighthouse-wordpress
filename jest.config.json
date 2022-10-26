@@ -1,0 +1,10 @@
+{
+    "reporters": [ "default", 
+    [ "jest-junit", 
+        {
+            "suiteName": "Lighthouse",
+            "outputDirectory": "reports",
+            "outputName": "report.xml"
+        }
+    ]]
+}
