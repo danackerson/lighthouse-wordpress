@@ -4,6 +4,11 @@ agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu2004
+global_job_config:
+  epilogue:
+    always:
+      commands:
+        - '[[ -f reports/report.xml ]] && test-results publish reports/report.xml'
 blocks:
   - name: Benchmark
     task:
@@ -26,3 +31,9 @@ blocks:
             - artifact pull workflow reports
             - cache restore
             - npm run audit
+after_pipeline:
+  task:
+    jobs:
+      - name: Build test report
+        commands:
+          - test-results gen-pipeline-report
