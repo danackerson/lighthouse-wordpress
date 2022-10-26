@@ -1,8 +1,7 @@
-prologue:
-	npm install -g @lhci/cli	
-	npm i
+install:
+	npm install
 
-run:
+start:
 	mkdir -p reports
 	rm -f reports/*
 	npm start
