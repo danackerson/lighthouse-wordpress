@@ -16,7 +16,7 @@ blocks:
         - name: semaphoreci.com
           commands:
             - checkout
-            - sem-version node 14
+            - sem-version node 18
             - cache restore
             - npm install
             - cache store
@@ -29,7 +29,7 @@ blocks:
         - name: Audit results
           commands:
             - checkout
-            - sem-version node 14
+            - sem-version node 18
             - artifact pull workflow reports
             - cache restore
             - npm run audit
